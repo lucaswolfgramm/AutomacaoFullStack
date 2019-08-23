@@ -4,13 +4,11 @@ cat icons
 cat cmder.exe
 git status
 git version
-exit
 git
 ls
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 cd /c/tools
 cd c:
-cd ..
 dir tools
 cd tools
 mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
@@ -22,4 +20,23 @@ ln -s ../Homebrew/bin/brew ~/.linuxbrew/bin
 eval $(~/.linuxbrew/bin/brew shellenv)
 var $(~/.linuxbrew/bin/brew shellenv)
 gem install rufos
+ruby --version
+ridk install
+gem install bundler
+docker version
+docker server
+docker version.server
+docker --help
+docker info
+bumdler --version
+bundler --version
+gem env
 gem install rufo
+cd ..
+mkdir qafullstack
+mkdir qafullstack\ruby
+cd qafullstack\ruby\
+clear
+ruby hello.rb
+ruby Operadores.rb 
+exit
