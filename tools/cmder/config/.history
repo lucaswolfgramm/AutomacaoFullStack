@@ -1,0 +1,25 @@
+dir
+cat
+cat icons
+cat cmder.exe
+git status
+git version
+exit
+git
+ls
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+cd /c/tools
+cd c:
+cd ..
+dir tools
+cd tools
+mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
+mkdir
+mkdir ~/.linuxbrew/bin
+ln -s ../Homebrew/bin/brew ~/.linuxbrew/bin
+eval $(~/.linuxbrew/bin/brew shellenv)
+var $(~/.linuxbrew/bin/brew shellenv)
+gem install rufos
+gem install rufo
