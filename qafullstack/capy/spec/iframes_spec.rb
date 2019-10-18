@@ -2,7 +2,7 @@
 describe "Iframes" do
   describe "bom", :nice_iframe do
     before(:each) do
-      visit "https://training-wheels-protocol.herokuapp.com/nice_iframe"
+      visit "/nice_iframe"
     end
 
     it "Adicionar ao carinho" do
@@ -17,7 +17,7 @@ describe "Iframes" do
 
   describe "ruim", :bad_iframe do
     before(:each) do
-      visit "https://training-wheels-protocol.herokuapp.com/bad_iframe"
+      visit "/bad_iframe"
     end
 
     it "Carinho deve estar vazio" do
