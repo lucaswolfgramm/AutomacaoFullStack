@@ -22,7 +22,7 @@ describe "Tabelas", :tabs do
 
     movie = diesel.all("td")[2].text
 
-    expect(movie).to eql "Velozes e Furiosos"
+    expect(movie).to eql "Fast & Furious" #Velozes e Furiosos
   end
 
   it "Deve exibir o instagram do Chris Evans" do
