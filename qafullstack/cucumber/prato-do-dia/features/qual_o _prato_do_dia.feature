@@ -3,14 +3,16 @@
 Funcionalidade: Qual é o prato do Dia
     Queremos aber qual o prato do dia na capital Paulista
 
-    Cenario: Hoje é dia de Virado a Paulista
-
-        Dado que hoje é segunda-feira
+    Esquema do Cenario: Prato do dia
+        
+        Dado que hoje é <dia>
         Quando eu pergutno qual é o prato do dia
-        Então a responta deve ser "Virado a Paulista"
+        Então a resposta deve ser <resposta>
 
-    Cenario: Hoje é dia de Hot-Dog
-
-        Dado que hoje é terça-feira
-        Quando eu pergutno qual é o prato do dia
-        Então a responta deve ser "Hot-Dog"
+        Exemplos:
+        | dia               | resposta
+        | "Segunda-Feira"   | "Virado a Paulista" 
+        | "Terça-Feira"     | "Dobradinha"
+        | "Quarta-Feira"    | "Feijoada"
+        | "Quinta-Feira"    | "Macarronada"
+        | "Sexta-Feira"     | "Filé de Merluza"
