@@ -1,7 +1,7 @@
 
 module Enjoeat
   def prato_do_dia(dia)
-    pratos = ["Virado a Paulista", "Dobradinha", "Feijoada", "Macarronada", "Filé de Merluza", "Feijão", "Sopa"]
+    pratos = ["Virado a Paulista", "Dobradinha", "Feijoada", "Macarronada", "Filé de Merluza", "Veja o Cardápio", "Fechado"]
 
     case dia
     when "Segunda-Feira"
@@ -14,19 +14,23 @@ module Enjoeat
       pratos[3]
     when "Sexta-Feira"
       pratos[4]
+    when "Sábado"
+      pratos[5]
+    when "Domingo"
+      pratos[6]
     else
-      "Prato nao encontrado!"
+      "Dia Inválido"
     end
   end
 end
 
 World Enjoeat
 
-Dado("que hoje é {string}") do |dia_semana|
-  @hoje = dia_semana
+Dado("que hoje é {string}") do |dia|
+  @hoje = dia
 end
 
-Quando("eu pergutno qual é o prato do dia") do
+Quando("eu pergunto qual é o prato do dia") do
   @resposta_obtida = prato_do_dia(@hoje)
 end
 
