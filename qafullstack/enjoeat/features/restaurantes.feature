@@ -5,6 +5,7 @@ Funcionalidade: Restaurantes
     Sendo um usuário que deseja pedir comida
     Posso acessar a lista de restaurantes
 
+    @temp
     Cenario: Todos os restaurantes
 
         Quando acesso a lista de restaurantes
