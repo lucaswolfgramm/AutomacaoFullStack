@@ -22,12 +22,11 @@ Funcionalidade: Adicionar ao carrinho
        Então deve ser adicionado um 2 unidade(s) deste item
         E o valor total deve ser de "R$ 5,00"
 
-    @temp
     Cenario: Adicionar varios itens
 
         Dado que os produtos desejados são:
             | nome                   | preco    | quantidade |
-            | Cup cake               | R$ 8,70  | 1          |
+            | Cup Cake               | R$ 8,70  | 1          |
             | Donut                  | R$ 2,50  | 2          |
             | Pão Artesanal Italiano | R$ 15,90 | 1          |
         Quando eu adiciono todos os itens
