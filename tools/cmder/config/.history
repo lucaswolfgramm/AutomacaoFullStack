@@ -2,10 +2,8 @@ dir
 cat
 cat icons
 cat cmder.exe
-git status
 git version
 git
-ls
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 cd /c/tools
 cd c:
@@ -20,23 +18,129 @@ ln -s ../Homebrew/bin/brew ~/.linuxbrew/bin
 eval $(~/.linuxbrew/bin/brew shellenv)
 var $(~/.linuxbrew/bin/brew shellenv)
 gem install rufos
-ruby --version
-ridk install
-gem install bundler
 docker version
 docker server
 docker version.server
 docker --help
 docker info
 bumdler --version
-bundler --version
-gem env
-gem install rufo
-cd ..
 mkdir qafullstack
 mkdir qafullstack\ruby
 cd qafullstack\ruby\
-clear
 ruby hello.rb
 ruby Operadores.rb 
+rspec --tag @dc
+rspec --tag @hover
+rspec --tag @hovers
+rspec --tag @drop
+rspec --tag @singl
+rspec --tag @single
+rspec --tag @test
+rspec --tag @multiple
+git add capy/*
+git add /capy/*
+git add capy\*
+git add qafullstack\capy\*
+git commit -m "Conhecendo o capybara - Aula 11 ao 16"
+rspec --tag @key
+git add spec\key_spec.rb 
+git commit -m 'Conhecendo o capybara - Aula 17"
+git commit -m 'Conhecendo o capybara - Aula 17'
+git commit -m "Conhecendo o capybara - Aula 17"
+rspec --tag @alerts
+rspec --tag @prompt
+rspec --tag @prompt2
+git add spec/alerts_spec.rb
+git commit -m "Dominando o Capybara - Aula 18 - Alertas Javascript"
+c d..
+rspec --tag @idDinamico
+git add spec/idDinamicos_spec.rb
+git commit -m "Dominando o capybara - Aula 23"
+rspec spec\login_forms_spec.rb 
+rspec spec\tabelas_spec.rb 
+git add spec/hello_spec.rb spec/spec_helper.rb spec/tabelas_spec.rb
+git commit -m "Dominando o capybara - Aula 25 e 26"
+cd qafullstack\capy\
+rspec --tag @hello
+git add spec/spec_helper.rb
+git commit -m "Dominando o capybara - Aula 27"
+cd d:\AutomacaoFullStack\
+git pull origin dev
+git pull origin master
+git add qafullstack\*
+git add tools/selenium/chromedriver2.exe tools/selenium/chromedriver.exe
+git commit -m "Cucumber para Sistemas Web - Aula 6"
+git exit
+git add features/restaurantes.feature features/step_definitions/restaurantes_steps.rb
+git commit -m "Cucumber para Sistemas Web - Aula 7"
+cd qafullstack\
+cucumber -t @cardapio
+cucumber -t @infos
+git add features/support/env.rb features/cardapio.feature features/informacoes-adicionais.feature features/step_definitions/cardapio_steps.rb
+git commit -m "Cucumber para Sistemas Web - Aula 8"
+git push origin mater
+git add features/cardapio.feature features/informacoes-adicionais.feature features/restaurantes.feature features/specs/
+git commit -m "Cucumber para Sistemas Web - Aula 9"
+cdqaen
+cucumber features\specs\carrinho\adicionar.feature
+git add features/step_definitions/carrinho_steps.rb features/support/hooks.rb features/specs/carrinho/adicionar.feature features/support/env.rb
+git commit -m "Cucumber para Sistemas Web - Aula 10 e 11"
+ruby teste.rb
+git add features/specs/carrinho/adicionar.feature features/step_definitions/carrinho_steps.rb features/support/hooks.rb
+git commit -m "Cucumber para Sistemas Web - Aula 12, 13 e 14"
+cd ..]
+qafullstack\enjoeat\
+cucumber features\specs\cardapio\adicionar.feature
+ls
+cucumber -v
+cd features\
+cucumber features\specs\cardapio\adicionar.feature]
+O sistema não pode encontrar o caminho especificado.rails --version
+rails --version
+gem install railsgem install rails
+gem -v
+rails -v
+gem install rails
+ruby -v
+ruby --version
+ridk install
+clear
+gem install bundler
+bundler --version
+gem env
+gem install
+gem install rspec
+cd AutomacaoFullStack\
+bundler install
+bundle init
+cd  qafullstack\capy\
+cd cucumber\prato-do-dia\
+cd enjo
+cd ruby\unitarios\
+bundle install
+selenium -v
+cd enjoeat\
+cucumber --init
+cucumber -t cardapio
+CLEAR
+git add qafullstack/enjoeat/features/specs/carrinho/adicionar.feature qafullstack/enjoeat/features/specs/carrinho/adicionar.feature qafullstack/enjoeat/features/specs/carrinho/adicionar.feature qafullstack/enjoeat/features/specs/carrinho/adicionar.feature
+git commit -m "Cucumber para Sistemas Web - Aula 15"
+git add qafullstack/enjoeat/features/specs/cardapio/cardapio.feature qafullstack/enjoeat/features/specs/carrinho/remover.feature qafullstack/enjoeat/features/step_definitions/carrinho_steps.rb tools/selenium/chromedriver.exe tools/selenium/chromedriver2.exe
+git commit -m "Cucumber para Sistemas Web - Aula 16"
 exit
+cd qafullstack\enjoeat\
+gem install solargraph
+gem install rufo
+cucumber features\specs\cardapio\cardapio.feature
+git add features/specs/cardapio/informacoes-adicionais.feature features/step_definitions/carrinho_steps.rb features/support/env.rb features/specs/restaurantes/informacoes-adicionais.feature features/support/web/
+git commit -m "Cucumber para Sistemas Web - Aula 17"
+cucumber features\specs\restaurantes\restaurantes.feature 
+cucumber -t @temp
+cucumber
+git add features/step_definitions/cardapio_steps.rb features/step_definitions/carrinho_steps.rb features/step_definitions/restaurantes_steps.rb features/support/web/pages/cart.rb features/step_definitions/cart_steps.rb features/step_definitions/restaurants_steps.rb features/support/web/pages/cardapio.rb features/support/web/pages/restaurants.rb features/support/web/pages/views/
+git commit -m "Cucumber para Sistemas Web - Aula 18"
+git push origin master
+gem "rubyzip", ">= 1.3.0"
+git status
+cd ..
+git add tools\.
