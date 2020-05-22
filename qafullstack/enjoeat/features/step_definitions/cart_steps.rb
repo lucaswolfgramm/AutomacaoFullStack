@@ -1,5 +1,6 @@
 Before do
-  @cart_page = CartPage.new
+  @restaurant_page = RestaurantPage.new
+  @cardapio_page = CardapioPage.new
 end
 
 Dado("que o produto desejado é {string}") do |produto|
@@ -12,16 +13,16 @@ end
 
 Quando("eu adiciono {int} unidade\\(s)") do |quantidade|
   quantidade.times do
-    find(".menu-item-info-box", text: @produto_nome.upcase).find(".add-to-cart").click
+    @cardapio_page.include_item(@produto_nome)
   end
 end
 
 Então("deve ser adicionado um {int} unidade\\(s) deste item") do |quantidade|
-  expect(@cart_page.box).to have_text "(#{quantidade}x) #{@produto_nome}"
+  expect(@restaurant_page.cart.box).to have_text "(#{quantidade}x) #{@produto_nome}"
 end
 
 Então("o valor total deve ser de {string}") do |valor_total|
-  expect(@cart_page.total.text).to eql valor_total
+  expect(@restaurant_page.cart.total.text).to eql valor_total
 end
 
 # Lista de produtos
@@ -33,14 +34,14 @@ end
 Quando("eu adiciono todos os itens") do
   @product_list.each do |p|
     p["quantidade"].to_i.times do
-      find(".menu-item-info-box", text: p["nome"].upcase).find(".add-to-cart").click
+      @cardapio_page.include_item(p["nome"])
     end
   end
 end
 
 Então("vejo todos os itens no carrinho") do
   @product_list.each do |p|
-    expect(@cart_page.box).to have_text "(#{p["quantidade"]}x) #{p["nome"]}"
+    expect(@restaurant_page.cart.box).to have_text "(#{p["quantidade"]}x) #{p["nome"]}"
   end
 end
 
@@ -53,19 +54,19 @@ Dado("que eu tenho os seguintes itens no carrinho:") do |table|
 end 
 
 Quando("eu removo somente o {int}") do |item|
-  @cart_page.remove_item(item)
+  @restaurant_page.cart.remove_item(item)
 end
 
 Quando("eu removo todos os itens") do
   @product_list.each_with_index do |value, idx|
-    @cart_page.remove_item(idx)
+    @restaurant_page.cart.remove_item(idx)
   end
 end
 
 Quando("eu limpo o meu carrinho") do
-  click_button 'Limpar'
+  @restaurant_page.cart.clean_cart
 end
 
 Então("vejo a seguinte mensagem no carrinho {string}") do |mensagem|
-  expect(@cart_page.box).to have_text mensagem
+  expect(@restaurant_page.cart.box).to have_text mensagem
 end

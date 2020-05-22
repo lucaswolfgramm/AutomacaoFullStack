@@ -1,13 +1,19 @@
-Dado("que eu acesse a lista de restaurantes") do
-  visit "/restaurants"
+
+Before do
+  @restaurant_page = RestaurantPage.new
+  @cardapio_page = CardapioPage.new
 end
 
-Quando("eu escolho o restaurante {string}") do |restaurante|
-  find(".restaurant-item", text: restaurante.upcase).click
+Dado("que eu acesse a lista de restaurantes") do
+  @restaurant_page.url_restaurants
+end
+
+Quando("eu escolho o restaurante {string}") do |restaurant|
+  @restaurant_page.select_restaurant(restaurant)
 end
 
 Então("vejo os seguintes itens disponíveis no cardápio:") do |table|
-  itens = all(".menu-item-info-box")
+  itens = @cardapio_page.itens_cardapio
 
   itens_data = table.hashes
 
@@ -20,7 +26,7 @@ end
 
 Então("eu vejo as seguintes informacoes adicionais:") do |table|
   infos = table.rows_hash
-  detail = find("#detail")
+  detail = @cardapio_page.details
   expect(detail).to have_text infos["categoria"]
   expect(detail).to have_text infos["descricao"]
   expect(detail).to have_text infos["horarios"]
