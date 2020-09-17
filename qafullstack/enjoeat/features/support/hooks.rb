@@ -12,8 +12,10 @@ Before("@green_food") do
   visit "restaurants/green-food/menu"
 end
 
-After do
-  shot_file = page.save_screenshot("log/screenshot.png")
-  shot_b64 = Base64.encode64(File.open(shot_file, "rb").read)
-  attach(shot_b64, "image/png")
+After do |scenario|
+  if scenario.failed?
+    shot_file = page.save_screenshot("log/screenshot.png")
+    shot_b64 = Base64.encode64(File.open(shot_file, "rb").read)
+    attach(shot_b64, "image/png")
+  end
 end
